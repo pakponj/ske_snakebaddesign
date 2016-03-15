@@ -57,4 +57,8 @@ public class BoardController {
         return current;
     }
 
+    public String getP1Color() {return board.getP1Color();}
+
+    public String getP2Color() {return board.getP2Color();}
+
 }

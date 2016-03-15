@@ -43,8 +43,8 @@ public class Game {
     }
 
     public String getMsg() {
-        if(winner == 1) return "Player 1 won!";
-        else if(winner == 2) return "Player 2 won!";
+        if(winner == 1) return controller.getP1Color()+" 1 won!";
+        else if(winner == 2) return controller.getP2Color()+" 2 won!";
         else return "";
     }
 

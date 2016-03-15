@@ -69,6 +69,8 @@ public class GameActivity extends AppCompatActivity {
         boardView.setBoardSize(game.getController().getBoardSize());
         boardView.setP1Position(game.getController().getP1Position());
         boardView.setP2Position(game.getController().getP2Position());
+        if(game.getTurn() % 2 == 0) textPlayerTurn.setText(game.getController().getP1Color()+"'s Turn");
+        else textPlayerTurn.setText(game.getController().getP2Color()+"'s Turn");
 //        boardView.setBoardSize(boardSize);
 //        boardView.setP1Position(p1Position);
 //        boardView.setP2Position(p2Position);
@@ -89,8 +91,8 @@ public class GameActivity extends AppCompatActivity {
     }
 
     private void moveCurrentPiece(int value) {
-        if(game.getTurn() % 2 == 0) textPlayerTurn.setText("Player 2's Turn");
-        else textPlayerTurn.setText("Player 1's Turn");
+        if(game.getTurn() % 2 == 0) textPlayerTurn.setText(game.getController().getP2Color()+"'s Turn");
+        else textPlayerTurn.setText(game.getController().getP1Color()+"'s Turn");
         game.moveCurrentPiece(value);
         boardView.setP1Position(game.getController().getP1Position());
         boardView.setP2Position(game.getController().getP2Position());
