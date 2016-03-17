@@ -2,6 +2,7 @@
 Redesign snake and ladder game
 
 What have I made change to the design
+
 From the GameActivity class, i have take the logical parts out and put them in as follow;
 
 1. Game - contains BoadController and the GameActivtiy methods involving taking turn, roll a die, and etc.
