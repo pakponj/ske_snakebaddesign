@@ -15,4 +15,5 @@ From the GameActivity class, i have take the logical parts out and put them in a
 - GameActivity now holds only ui parts.
 - BoardView also holds only ui parts of the board
 
+Pakpon Jetapai 5710546381
 
